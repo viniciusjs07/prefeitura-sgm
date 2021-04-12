@@ -1,0 +1,5 @@
+Alterar a url do banco
+
+./gradlew build (se rodar somente ./gradlew o app é iniciado)
+
+docker-compose up

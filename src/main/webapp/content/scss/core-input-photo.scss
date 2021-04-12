@@ -1,0 +1,130 @@
+.card-photo {
+  width: 127px;
+  max-height: 127px;
+  border-radius: 4px;
+  opacity: 1;
+  background-color: #F5F6FA;
+  border: 1px solid #EAECEF;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.card-photo > .card-body {
+  padding: 10px;
+  margin: 0;
+  height: 119px;
+}
+
+.photo-center {
+  padding: 30px 42px 45px 45px;
+}
+
+.icon-photo {
+  max-width: 42px;
+  min-height: 42px;
+  font-size: 42px;
+}
+/**
+ Example photo input with 1 card
+
+ <div class="card card-photo">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <div class="row photo-center">
+                    <img class="icon-photo" [src]="'content/images/ic_add_photo.svg'">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ */
+
+
+/**
+ Example photo input with 6 cards
+
+ <div class="col-4">
+    <div class="row">
+
+        <div class="card card-photo">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row photo-center">
+                            <img class="icon-photo" [src]="'content/images/ic_add_photo.svg'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-photo">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row photo-center">
+                            <img class="icon-photo" [src]="'content/images/ic_add_photo.svg'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card card-photo">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row photo-center">
+                            <img class="icon-photo" [src]="'content/images/ic_add_photo.svg'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-photo">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row photo-center">
+                            <img class="icon-photo" [src]="'content/images/ic_add_photo.svg'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card card-photo">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row photo-center">
+                            <img class="icon-photo" [src]="'content/images/ic_add_photo.svg'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card card-photo">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row photo-center">
+                            <img class="icon-photo" [src]="'content/images/ic_add_photo.svg'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+ */
+

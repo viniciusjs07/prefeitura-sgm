@@ -1,0 +1,24 @@
+<div class="table-responsive" *ngIf="authorities">
+
+    <table class="table e-table" aria-describedby="settings-page-heading">
+        <thead>
+        <tr>
+            <th scope="col" jhiTranslate="authorities.list.name">Name</th>
+            <th scope="col" jhiTranslate="authorities.list.description">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor=" let authority of authorities">
+            <td class="font-weight-bold">{{authority.name}}</td>
+            <td>{{('permission.' + authority.name).toLocaleLowerCase() | translate}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="authorities?.length" class="d-flex flex-row justify-content-between p-2 pt-4">
+    <sgm-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></sgm-item-count>
+    <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5"
+                    [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+</div>
+

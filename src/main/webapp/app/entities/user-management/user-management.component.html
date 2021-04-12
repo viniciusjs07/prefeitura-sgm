@@ -1,0 +1,67 @@
+<div>
+    <div class="container-label">
+        <span id="user-management-page-heading" class="title-page" jhiTranslate="userManagement.home.title">Users</span>
+
+        <button class="btn btn-primary float-right jh-create-entity" [routerLink]="['./new']"
+                *sgmHasAnyAuthority="['ROLE_RW_USER']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span jhiTranslate="userManagement.home.createLabel">Create a new User</span>
+        </button>
+
+        <sgm-search (modelChange)="setFilter($event)" class="float-right"
+                      placeholder="{{ 'userManagement.searchPlaceholder' | translate }}">
+        </sgm-search>
+
+    </div>
+
+    <sgm-alert></sgm-alert>
+
+    <div *ngIf="users?.length">
+        <div class="table-responsive">
+            <table class="table e-table" aria-describedby="user-management-page-heading">
+                <thead>
+                <tr>
+                    <th scope="col"><span jhiTranslate="userManagement.createdDate">Created Date</span></th>
+                    <th scope="col"><span jhiTranslate="userManagement.login">Login</span></th>
+                    <th scope="col"><span jhiTranslate="userManagement.email">Email</span></th>
+                    <th scope="col"><span jhiTranslate="userManagement.profiles">Profiles</span></th>
+                    <th scope="col"><span jhiTranslate="userManagement.status">Status</span></th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody *ngIf="users">
+                <tr *ngFor="let user of users">
+                    <td>{{user.createdDate | date:'dd/MM/yy HH:mm'}}</td>
+                    <td class="font-weight-bold">{{user.login}}</td>
+                    <td class="word-break-text">{{user.email}}</td>
+                    <td>
+                        <div *ngFor="let profile of user.profiles">
+                            <span>{{ profile.name}}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <sgm-toggle-button [activated]="user.activated" [disabledToggle]="disableToggle(user)"
+                                                 (toggleAction)="changeUserStatus(user)"></sgm-toggle-button>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <div class="col-3" (click)="checkInternet()">
+                                <fa-icon [class.edit-button]="!disableEdit(user)" [class.fa-disabled]="disableEdit(user)"
+                                         [routerLink]="disableEdit(user) ? null : ['./', user.login, 'edit']" [icon]="'pencil-alt'"></fa-icon>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="totalItems" class="d-flex flex-row justify-content-between p-2 pt-4">
+            <sgm-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></sgm-item-count>
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5"
+                            [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+        </div>
+    </div>
+</div>

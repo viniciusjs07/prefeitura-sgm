@@ -1,0 +1,228 @@
+{
+  "global": {
+    "title": "SGM Sistema",
+    "select": {
+      "noItemsFound": "Nenhum item"
+    },
+    "browsehappy": "Você está usando um navegador <strong>desatualizado</strong>. Favor <a href=\"http://browsehappy.com/?locale=pt_BR\">atualize o seu navegador</a> para ter uma experiência melhor.",
+    "menu": {
+      "home": "Início",
+      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+      "entities": {
+        "main": "Entidades",
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+      },
+      "account": {
+        "main": "Conta",
+        "settings": "Configuração",
+        "password": "Senha",
+        "sessions": "Sessões",
+        "login": "Entrar",
+        "logout": "Sair"
+      },
+      "admin": {
+        "main": "Administração",
+        "userManagement": "Gerenciamento de usuário",
+        "tracker": "Rastreamento de usuário",
+        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
+      },
+      "language": "Idioma"
+    },
+    "form": {
+      "username.label": "Usuário",
+      "username.placeholder": "Seu usuário",
+      "currentpassword.label": "Senha atual",
+      "currentpassword.placeholder": "Senha atual",
+      "newpassword.label": "Nova senha",
+      "newpassword.placeholder": "Nova senha",
+      "confirmpassword.label": "Confirmação de nova senha",
+      "confirmpassword.placeholder": "Confirme a nova senha",
+      "email.label": "E-mail",
+      "email.placeholder": "Seu e-mail"
+    },
+    "messages": {
+      "info": {
+        "notSaved": "Não salvo",
+        "noChanges": "Nenhuma alteração foi feita.",
+        "authenticated": {
+          "prefix": "Se deseja ",
+          "link": "entrar",
+          "suffix": ", utilize as seguintes contas padrões:<br/>- Administrador (usuário=\"admin\" and senha=\"admin\") <br/>- Usuário (usuário=\"user\" e senha=\"user\")."
+        }
+      },
+      "error": {
+        "dontmatch": "A senha e sua confirmação devem ser iguais!"
+      },
+      "validate": {
+        "password": {
+          "required": "Campo obrigatório.",
+          "minlength": "A senha deve ter pelo menos 8 caracteres",
+          "maxlength": "A senha não pode ter mais de 50 caracteres",
+          "pattern": "A senha deve ser composta por letras maiúsculas, minúsculas, números, caracteres especiais (@ * ! % ; : . ) e ter entre 8 e 30 caracteres."
+        },
+        "confirmPassword": {
+          "required": "Campo obrigatório.",
+          "confirmPasswordNotEquals": "As senhas devem ser iguais."
+        },
+        "email": {
+          "required": "O e-mail é obrigatório.",
+          "invalid": "E-mail inválido.",
+          "minlength": "O usuário do e-mail deve ter pelo menos 3 caracteres.",
+          "maxlength": "O e-mail deve ter no máximo 254 caracteres."
+        },
+        "login": {
+          "minlength": "Login deve ter pelo menos 3 caracteres.",
+          "maxlength": "Login deve ter no máximo 20 caracteres."
+        },
+        "firstname": {
+          "minlength": "Nome deve ter pelo menos 3 caracteres.",
+          "maxlength": "Nome deve ter no máximo 50 caracteres."
+        },
+        "lastname": {
+          "minlength": "Sobrenome deve ter pelo menos 1 caracteres.",
+          "maxlength": "Sobrenome deve ter no máximo 20 caracteres."
+        },
+        "productName": {
+          "required": "Campo é obrigatório.",
+          "maxlength": "Este campo deve ter no máximo 50 caracteres.",
+          "minlength": "Nome deve ter pelo menos 3 caracteres.",
+          "lengthName": "Nome deve ter entre 3 e 50 caracteres."
+        },
+        "description": {
+          "required": "A descrição do produto é obrigatória.",
+          "maxlength": "Este campo deve ter no máximo 100 caracteres.",
+          "minlength": "Descrição deve ter pelo menos 3 caracteres."
+        },
+        "profileName": {
+          "minlength": "Nome deve ter pelo menos 3 caracteres."
+        }
+      },
+      "loading": "Enviando dados, aguarde",
+      "loadgindData": "Carregando dados, aguarde"
+    },
+    "field": {
+      "id": "Código"
+    },
+    "ribbon": {
+      "dev": "Desenvolvimento"
+    },
+    "item-count": "<div class=\"pagination-pages-info\">Página {{ first }} de {{ second }}</div><div class=\"pagination-count-info\">{{ total }} registro(s) encontrados(s)</div>",
+    "item-count-sgm": "<div class=\"pagination-pages-info\">Página {{ first }} de {{ second }}</div><div class=\"pagination-count-info\">{{ total }} registro(s) encontrado(s)</div>",
+    "roles": {
+      "Administrator": "Administrador",
+      "User": "Usuário"
+    }
+  },
+  "entity": {
+    "main": "Entidades",
+    "user": {
+      "main": "Usuário"
+    },
+    "citizen": {
+      "title": "Serviços do Cidadão",
+      "view": "Visualizar Serviço"
+    },
+    "product": {
+      "main": "Serviço",
+      "edit": "Editar serviço",
+      "register": "Cadastrar serviço"
+    },
+    "category": {
+      "main": "Categorias de Serviço"
+    },
+    "action": {
+      "back": "Voltar",
+      "cancel": "Cancelar",
+      "delete": "Excluir",
+      "edit": "Editar",
+      "open": "Abrir",
+      "add": "ADICIONAR",
+      "save": "Salvar",
+      "view": "Visualizar",
+      "confirmModal": "CONFIRMAR",
+      "cancelModal": "CANCELAR",
+      "deactivate": "Desativar",
+      "activate": "Ativar"
+    },
+    "detail": {
+      "field": "Campo",
+      "value": "Valor"
+    },
+    "delete": {
+      "title": "Confirme a exclusão"
+    },
+    "validation": {
+      "required": "Campo é obrigatório.",
+      "invalid": "Campo inválido.",
+      "invalidLink": "O link inserido é inválido.",
+      "infoTag": "Aperte enter após digitar uma palavra chave.",
+      "infoCompatibleProduct": "Aperte enter após digitar um produto compatível.",
+      "minlength": "Este campo deve ter pelo menos {{ min }} caracteres.",
+      "maxlength": "Este campo não pode ter mais de {{ max }} caracteres.",
+      "min": "Este campo deve ser maior que {{ min }}.",
+      "max": "Este campo não pode ser maior que {{ max }}.",
+      "minbytes": "Este campo deve ter pelo menos {{ min }} bytes.",
+      "maxbytes": "Este campo não pode ter mais de {{ max }} bytes.",
+      "pattern": "Este campo deve estar dentro do seguinte padrão {{ pattern }}.",
+      "number": "Este campo é do tipo numérico.",
+      "datetimelocal": "Este campo é do tipo data/hora.",
+      "patternLogin": "Este campo pode conter apenas letras, dígitos e endereços de e-mail com tamanho máximo de 20 caracteres."
+    }
+  },
+  "error": {
+    "internalServerError": "Erro interno do servidor",
+    "server.not.reachable": "Servidor indisponível",
+    "url.not.found": "Não encontrado",
+    "NotNull": "O Campo {{ fieldName }} não pode ser vazio!",
+    "Size": "O campo {{ fieldName }} não obedece os requisitos de tamanho mínimo ou máximo!",
+    "userexists": "Login já cadastrado no sistema.",
+    "emailexists": "Este e-mail já está sendo usado!",
+    "idexists": "Novo(a) {{entityName}} não pode ter um identificador",
+    "idnull": "Identificador inválido",
+    "profilenameexists": "Já existe um perfil registrado com este nome",
+    "unauthorizedLanguagePT_BR": "Você não tem permissão para editar dados em Português(Brasil)",
+    "unauthorizedLanguageEN": "Você não tem permissão para editar dados em Inglês",
+    "unauthorizedLanguageES": "Você não tem permissão para editar dados em Espanhol",
+    "unauthorizedTokenError": "Sua sessão expirou. Realize login novamente para continuar usando o sistema"
+  },
+  "footer": "Este é o rodapé da página",
+  "authorities": {
+    "list": {
+      "name": "Nome",
+      "description": "Descrição",
+      "id": "ID"
+    },
+    "messages": {
+      "error": "Não foi possível listar as permissões, tente novamente."
+    }
+  },
+  "profiles": {
+    "list": {
+      "name": "Nome",
+      "description": "Descrição",
+      "authorities": "Permissões"
+    },
+    "create": {
+      "authorities": "Permissões",
+      "labelname": "Nome",
+      "labeldescription": "Descrição",
+      "error": {
+        "invalidField": "Verifique os dados preenchidos."
+      }
+    },
+    "messages": {
+      "error": "Não foi possível listar os perfis, tente novamente.",
+      "createsuccess": "Perfil cadastrado.",
+      "createerror": "Não foi possível cadastrar o perfil, tente novamente.",
+      "savesuccess": "Perfil atualizado.",
+      "noProfilesFound": "Nenhum perfil econtrado.",
+      "cannotUpdatedAdminProfile": "Não é possível atualizar o perfil do administrador.",
+      "internetError": "Sem conexão à internet."
+    },
+    "error": {
+      "internetError": "Sem conexão à internet.",
+      "serverError": "A conexão com o servidor foi perdida.",
+      "gatewayTimeout": "Servidor temporariamente indisponível."
+    }
+  }
+}

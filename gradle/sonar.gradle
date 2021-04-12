@@ -1,0 +1,35 @@
+jacoco {
+    toolVersion = "0.8.5"
+}
+
+jacocoTestReport {
+    executionData tasks.withType(Test)
+    classDirectories.from = files(sourceSets.main.output.classesDirs)
+    sourceDirectories.from = files(sourceSets.main.java.srcDirs)
+
+    reports {
+        xml.enabled = true
+    }
+}
+project.tasks["sonarqube"].dependsOn jacocoTestReport
+
+file("sonar-project.properties").withReader {
+    Properties sonarProperties = new Properties()
+    sonarProperties.load(it)
+
+    sonarProperties.each { key, value ->
+        sonarqube {
+            properties {
+                property "sonar.sources", "./src/main/"
+                property "sonar.scm.disabled", "True"
+                property "sonar.sourceEncoding", "UTF-8"
+                property "sonar.jacoco.reportPath", "build/jacoco/test.exec"
+                property "sonar.javascript.lcov.reportPaths", "build/test-results/lcov.info"
+                property "sonar.exclusions", "src/main/resources/static/**, src/main/webapp/i18n/*.js, build/resources/main/static/**/*.*, " +
+                        "src/main/java/br/com/prefeitura/bomdestino/sig/SystemSGMApp.java"
+                property "sonar.cpd.exclusions", "*src/main/java/br/com/prefeitura/bomdestino/sig/domain/*"
+                property "sonar.typescript.exclusions", "**/*route*.ts"
+            }
+        }
+    }
+}

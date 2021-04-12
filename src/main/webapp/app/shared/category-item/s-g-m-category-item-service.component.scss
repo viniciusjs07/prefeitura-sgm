@@ -1,0 +1,136 @@
+$green-success: #23b523;
+$red-cancel: #c70000;
+
+.item-container {
+  background-color: #f5f6fa;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  padding: 0 13px;
+  border: 1px solid #e3e3e7;
+  position: relative;
+
+  font-size: 12px;
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ececee;
+  }
+}
+
+.category-name > .signal {
+  margin-bottom: -1px;
+  margin-left: 7px;
+}
+
+.category-options-button,
+.category-name {
+  padding: 13px 0;
+  word-break: break-all;
+}
+
+.category-options-button {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+}
+
+.category-name-input {
+  background: #ffffff;
+  box-shadow: unset;
+  border: unset;
+  padding: 4px 55px 4px 4px;
+  margin: 9px 0 9px -4px;
+  height: fit-content;
+}
+
+.menu-options-category {
+  position: absolute;
+  background-color: white;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  padding: 10px 15px;
+  box-shadow: 1px 1px 7px -1px #a7a7a7;
+  font-size: 11px;
+  z-index: 1;
+  border-radius: 4px;
+  min-width: 120px;
+  color: #212529;
+
+  > *:hover {
+    cursor: pointer;
+  }
+}
+
+.signal {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-signal {
+  background-color: $green-success;
+}
+
+.inactive-signal {
+  background-color: $red-cancel;
+}
+
+.option-text {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.name-container {
+  position: relative;
+}
+
+.edit-options {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+
+  > .confirm,
+  .cancel {
+    padding: 3px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  > .confirm {
+    color: $green-success;
+    margin-right: 9px;
+  }
+
+  > .cancel {
+    color: $red-cancel;
+  }
+}
+
+.category-selected {
+  background-color: #3676db;
+  color: white;
+
+  &:hover {
+    background-color: #3c7ce4;
+  }
+}
+
+.not-saved-warn {
+  color: #c16060;
+  font-weight: bold;
+}
+
+.category-selected {
+  .not-saved-warn {
+    color: black;
+  }
+}

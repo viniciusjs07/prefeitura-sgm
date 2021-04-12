@@ -1,0 +1,22 @@
+{
+  "login": {
+    "title": "Sign in",
+    "app": "System SGM",
+    "labelApp": "Administrator",
+    "regionLabel": "Region",
+    "form": {
+      "password": "Password",
+      "password.placeholder": "Your password",
+      "rememberme": "Remember me",
+      "button": "ACCESS",
+      "langKey": "Language"
+    },
+    "messages": {
+      "error": {
+        "authentication": "Failed to sign in! Please check your credentials and try again.",
+        "gatewayTimeout": "Server temporarily unavailable.",
+        "internetError": "No internet connection."
+      }
+    }
+  }
+}

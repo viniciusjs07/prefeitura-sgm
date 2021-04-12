@@ -1,0 +1,49 @@
+{
+  "product": {
+    "page": {
+      "headPage": "ADMINISTRATION"
+    },
+    "searchPlaceholder": "Search Service",
+    "activate": "Activating Service",
+    "activateBody": "Service will be activated, confirm?",
+    "deactivate": "Deactivating Service",
+    "deactivateBody": "Service will be deactivated, confirm?",
+    "home": {
+      "title": "Services",
+      "createProduct": "Service",
+      "categories": "Categories"
+    },
+    "form": {
+      "addProduct": "Register service",
+      "editProduct": "Service details",
+      "name": "Name",
+      "description": "Description",
+      "categories": "Categories",
+      "invalidCategory": "Category disabled",
+      "details": "Details",
+      "title": "Title"
+    },
+    "error": {
+      "onSave": "Couldn't create service.",
+      "onUpdate": "Couldn't update service.",
+      "missingImages": "Service need at least 1 media.",
+      "noProductsFound": "No service found.",
+      "alreadyModelWithName": "There is already a model of service registered with this name.",
+      "invalidField": "Check the filled data.",
+      "internetError": "No internet connection.",
+      "serverError": "The connection to the server has been lost.",
+      "noRootCategory": "Service cannot be associated with a base category.",
+      "alreadyProductWithName": "There is already a service registered with this name.",
+      "gatewayTimeout": "Server temporarily unavailable.",
+      "minlength": "Service name must be at least 3 characters.",
+      "cannotBeNull": "Service name cannot be empty."
+    },
+    "success": {
+      "onSave": "Service registered.",
+      "onUpdate": "Updated service.",
+      "onDelete": "Service removed.",
+      "onDeactivate": "Service deactivated.",
+      "onActivate": "Service activated."
+    }
+  }
+}

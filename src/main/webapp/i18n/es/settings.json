@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "title": "Ajustes",
+    "btn": {
+      "createprofile": "Perfil"
+    },
+    "navs": {
+      "profiles": "Perfis",
+      "authorities": "Permisos",
+      "languages": "Idiomas",
+      "link": "Enlace Externo"
+    },
+    "form": {
+      "firstname": "Nombre",
+      "firstname.placeholder": "Su nombre",
+      "lastname": "Apellido",
+      "lastname.placeholder": "Su apellido",
+      "language": "Idioma",
+      "button": "Guardar"
+    },
+    "profile": {
+      "searchPlaceholder": "Buscar perfil"
+    },
+    "messages": {
+      "error": {
+        "fail": "<strong> ¡Ocurrió un error! </strong> La configuración no se ha guardado.",
+        "emailexists": "<strong> ¡E-mail ya registrado! </strong> Elija otro."
+      },
+      "success": "<strong> ¡La configuración se ha guardado correctamente! </strong>",
+      "validate": {
+        "firstname": {
+          "required": "El nombre es obligatorio.",
+          "minlength": "El nombre debe tener al menos 1 carácter",
+          "maxlength": "El nombre no puede tener más de 50 caracteres"
+        },
+        "lastname": {
+          "required": "Se requiere el apellido.",
+          "minlength": "El apellido debe tener al menos 1 carácter",
+          "maxlength": "El apellido no puede superar los 50 caracteres"
+        }
+      }
+    }
+  }
+}

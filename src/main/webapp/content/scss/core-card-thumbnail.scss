@@ -1,0 +1,90 @@
+.page-content-card {
+  padding: 1.7vw;
+  height: calc(100vh - 125px);
+  border: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #FFFFFF !important;
+}
+
+/* Change dimensions in card */
+.card-thumbnail {
+  max-width: 320px;
+  max-height: 100px;
+  border-radius: 8px;
+}
+
+/* This class override card body when it inside in a card thumbnail */
+.card-thumbnail > .card-body {
+  padding: 10px;
+  margin: 0;
+  box-shadow: none;
+  background: none;
+}
+
+/* This class its the main title */
+.card-thumb-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-bottom: 0;
+  color: #3D3D3D;
+}
+
+/* subtitle of card */
+.card-subtitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: #3D3D3D;
+  text-transform: uppercase;
+  padding-top: 5px;
+  margin-top: 0;
+}
+
+/* description of card */
+.card-description {
+  font-size: 12px;
+  color: #384364;
+  opacity: 0.5;
+  padding-top: 5px;
+}
+
+/* Change dimensions of the image */
+.thumbnail {
+  max-width: 80px;
+  max-height: 80px;
+  border: 1px solid #EAECEF;
+  border-radius: 4px;
+}
+
+/* ==============================================================
+Implementation example
+================================================================*/
+
+/*
+<div class="card card-thumbnail">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-4">
+                <div class="row m-0">
+                    <img class="thumbnail" [src]="'content/images/placeholder/thumbnail-placeholder.png'">
+                </div>
+            </div>
+            <div class="col-7 pl-4">
+                <div class="row">
+                    <p class="card-thumb-title">Product name</p>
+                </div>
+
+                <div class="row">
+                    <p class="card-subtitle">Subtitle</p>
+                </div>
+
+                <div class="row">
+                    <p class="card-description">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+*/
+

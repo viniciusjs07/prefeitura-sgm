@@ -1,0 +1,87 @@
+/*
+    Reference: https://alligator.io/css/collapsible/
+    
+    Example:
+    <div class="e-collapsible-container">
+        <input id="collapsible" class="toggle" type="checkbox">
+        <label for="collapsible" class="lbl-toggle">
+            More Info
+        </label>
+
+        <div class="collapsible-content">
+            <div class="content-inner">
+                Content here
+            </div>
+        </div>
+    </div>
+*/
+.e-collapsible-container {
+  min-height: 40px;
+
+  > input[type="checkbox"] {
+    display: none;
+  }
+
+  > .lbl-toggle {
+    background-color: white;
+    border: 1px solid #eaecef;
+    border-radius: 100px;
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0;
+
+    cursor: pointer;
+  }
+
+  > .lbl-toggle:hover {
+    color: #7c5a0b;
+  }
+
+  > .lbl-toggle::before {
+    content: " ";
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    transform: rotate(-90deg) translateY(-1px);
+
+    transition: transform 0.2s ease-out;
+  }
+
+  > .collapsible-content > .content-inner {
+    padding: 25px 25px 15px 25px;
+  }
+
+  > .collapsible-content {
+    margin-top: -25px;
+    z-index: -1;
+    border: 0.5px solid #eaecef;
+
+    max-height: 0px;
+    overflow: hidden;
+
+    transition: max-height 0.25s ease-in-out, border 10s linear;
+  }
+
+  > .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+  }
+
+  > .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-1px);
+  }
+
+  > .toggle:checked + .lbl-toggle {
+      color: #3277DB;
+  }
+}

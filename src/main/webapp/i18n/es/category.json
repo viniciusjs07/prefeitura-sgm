@@ -1,0 +1,27 @@
+{
+  "category": {
+    "confirmDeactivate": "¿Confirmar desactivación?",
+    "promptActivate": "Habilitar categoría",
+    "confirmActivate": "¿Confirmar activación?",
+    "activar": "Activar",
+    "deactivate": "Desactivar",
+    "editar": "Editar",
+    "categoryDeactivated": "Categoría inhabilitada",
+    "categoryActivated": "Categoría habilitada",
+    "inputName": "Nombre de categoría",
+    "error": {
+      "onCreate": "No se pudo crear la categoría",
+      "onUpdate": "No se puede editar la categoría",
+      "onLoad": "No se pueden cargar las categorías",
+      "minLength": "La categoría debe tener al menos 3 caracteres",
+      "internetError": "No hay conexión a Internet.",
+      "serverError": "Se perdió la conexión con el servidor.",
+      "duplicatedName": "Hay otra categoría en esa lista con el mismo nombre.",
+      "gatewayTimeout": "Servidor no disponible temporalmente."
+    },
+    "success": {
+      "onCreate": "Categoría creada",
+      "onUpdate": "Categoría actualizada"
+    }
+  }
+}

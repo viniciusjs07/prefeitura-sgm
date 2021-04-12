@@ -1,0 +1,24 @@
+<div>
+    <div class="container-label">
+        <span id="user-management-page-heading" class="title-page" jhiTranslate="product.home.title">Service of Citizen</span>
+
+        <sgm-search (modelChange)="setFilter($event)" class="float-right"
+                    placeholder="{{ 'product.searchPlaceholder' | translate }}">
+        </sgm-search>
+    </div>
+
+    <div class="main-container d-flex flex-row flex-wrap" (click)="checkInternet()">
+
+        <sgm-citizen-card *ngFor="let service of services" [class.service-disabled]="!service.activated"
+                          style="width: 32%; margin-bottom: 15px" class="mr-1 ml-1" (loadAll)="loadAll()"
+                          [service]="service" [routerLink]="['./', service.id, 'view']">
+        </sgm-citizen-card>
+
+    </div>
+
+    <div *ngIf="totalItems" class="d-flex flex-row justify-content-between p-2 pt-4">
+        <sgm-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></sgm-item-count>
+        <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5"
+                        [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+    </div>
+</div>

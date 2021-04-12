@@ -1,0 +1,50 @@
+.container-label {
+  padding-bottom: 5px;
+}
+
+.nav-tabs {
+  > .nav-item {
+    width: 160px;
+
+    > .nav-link {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.group {
+
+  > .e-input-wrapper {
+    max-width: calc(100% - 40px);
+  }
+
+  > .icon {
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 22px;
+    transition: 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}
+
+.chart-canvas {
+  max-height: 57vh;
+  min-height: 360px;
+  max-width: 80%;
+  min-width: 360px;
+  margin: 0 auto;
+}
+
+.region-select{
+  margin-left: 30px;
+}
+
+::ng-deep .modal-content {
+  border-radius: 8px !important;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%) !important;
+}

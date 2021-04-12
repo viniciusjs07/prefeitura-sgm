@@ -1,0 +1,29 @@
+{
+  "audits": {
+    "title": "Auditorias",
+    "filter": {
+      "title": "Filtrar por fecha",
+      "from": "de",
+      "to": "hasta",
+      "button": {
+        "weeks": "Semanas",
+        "today": "hoy",
+        "clear": "limpiar",
+        "close": "cerrar"
+      }
+    },
+    "table": {
+      "header": {
+        "principal": "Usuario",
+        "date": "Fecha",
+        "status": "Estatal",
+        "data": "Datos extra"
+      },
+      "data": {
+        "remoteAddress": "Dirección remota:"
+      }
+    },
+    "notFound": "No se encontró auditoría.",
+    "error": "No hay auditoría registrada por el momento."
+  }
+}

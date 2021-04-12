@@ -1,0 +1,100 @@
+/*
+    Example:
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">First</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sec</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Third</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Fourth</a>
+        </li>
+    </ul>
+
+*/
+.nav-tabs::before {
+  content: ' ';
+  height: 20px;
+  border-bottom: 2px solid #EAECEF;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.nav-tabs {
+  border-bottom: unset;
+  position: relative;
+
+  > .nav-item {
+    border: .5px solid #EAECEF;
+    background-color: white;
+    width: 144px;
+    height: 40px;
+    z-index: 0;
+
+    > .nav-link {
+      background-color: #FFFFFF !important;
+      color: #afb4c1;
+      padding: 10px 20px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+
+      transition: .2s;
+
+      height: 100%;
+      border: 1px solid #EAECEF;
+      border-top-width: 2px;
+      border-right-width: 2px;
+      margin-right: -2px;
+    }
+
+    > .nav-link:hover {
+      color: #646568;
+    }
+
+    .active {
+      background-color: #384364 !important;
+      border-color: #384364 !important;
+      color: white !important;
+      border-radius: 0;
+    }
+  }
+}
+
+.langs-container {
+  border-top: 1px solid #EAECEF;
+  border-bottom: 1px solid #EAECEF;
+  padding-bottom: 1px;
+
+  > .nav-tabs {
+    > .nav-item {
+      border: unset;
+      width: 165px;
+
+      > .nav-link {
+        padding-right: 7px;
+        padding-left: 7px;
+        border: unset;
+      }
+    }
+  }
+
+  > .nav-tabs > .nav-item .active {
+    background-color: unset !important;
+    color: #3676db !important;
+    font-weight: bold;
+    font-size: 12px;
+
+    border-bottom: 2px solid #3676db !important;
+  }
+}
+
+
+
+

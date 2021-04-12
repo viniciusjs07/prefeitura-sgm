@@ -1,0 +1,63 @@
+.menu-app {
+  border-right: 1px solid #D6D6D6;
+  background: #1e9dd4;
+  opacity: 1;
+  min-height: 100%;
+  position: fixed;
+  width: 250px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.margin-avatar {
+  margin-top: 30px;
+}
+
+.margin-user {
+  margin-top: 8px;
+
+}
+
+.label-user {
+  color: #FFFFFF;
+  padding-top: 14px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.label-email {
+  font-size: 13px;
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 50%;
+  transition: .5s ease;
+  background-color: hsla(0,0%,40%,.8);
+  margin: 0 auto;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.camera {
+  position: relative;
+  top: 30%;
+  color: white;
+}
+
+.camera-icon {
+  cursor: pointer;
+}

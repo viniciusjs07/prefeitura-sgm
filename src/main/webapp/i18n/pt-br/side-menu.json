@@ -1,0 +1,14 @@
+{
+  "itemmenu": {
+    "users": "Usuários",
+    "georeferenced": "Dados Georreferenciados",
+    "health": "Saúde",
+    "environment": "Ambiente",
+    "education": "Educação",
+    "services": "Serviços",
+    "citizen": "Cidadão",
+    "settings": "Configurações",
+    "change-image": "Mudar Imagem",
+    "categories": "Categorias"
+  }
+}

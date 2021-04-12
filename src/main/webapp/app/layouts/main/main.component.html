@@ -1,0 +1,45 @@
+<div>
+    <nav class="navbar top-navbar" [hidden]="!isAuthenticated()">
+        <div class="row align-items-center justify-content-start">
+            <div class="col pr-0">
+                <a class="navbar-brand" routerLink="/">
+                    <img [src]="'content/images/login/brasao-peq.png'" alt="logo puc minas">
+                </a>
+            </div>
+            <div>
+                <span jhiTranslate="login.app" class="color-app">SGM Core</span>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-end">
+            <div class="col">
+                <button type="button" class="btn btn-outline border-button" (click)="logout()">
+                    <span jhiTranslate="global.menu.account.logout">Logout</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="side-menu">
+        <sgm-side-menu (isAuthenticatedUser)="getIsAuthenticatedUser($event)"></sgm-side-menu>
+    </div>
+</div>
+
+<div [ngClass]="{'content': isAuthenticated()}">
+    <div class="page-content-card card">
+        <breadcrumb #parent>
+            <ol class="breadcrumb">
+                <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
+                    <li *ngIf="!route.terminal" class="breadcrumb-item">
+                        <a href="" [routerLink]="[route.url]">{{ route.displayName | translate }}</a>
+                    </li>
+                    <li *ngIf="route.terminal" class="breadcrumb-item active" aria-current="page">
+                        {{ route.displayName | translate }}</li>
+                </ng-template>
+            </ol>
+        </breadcrumb>
+        <router-outlet></router-outlet>
+        <router-outlet name="popup"></router-outlet>
+        <sgm-loading></sgm-loading>
+    </div>
+</div>

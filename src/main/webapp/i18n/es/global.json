@@ -1,0 +1,228 @@
+{
+  "global": {
+    "title": "SGM Sistema",
+    "select": {
+      "noItemsFound": "No hay ítem"
+    },
+    "browsehappy": "Estás usando un navegador <strong>desactualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=pt_BR\">actualice su navegador</a> para una mejor experiencia.",
+    "menu": {
+      "home": "Comienzo",
+      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+      "entities": {
+        "main": "Entidades",
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+      },
+      "account": {
+        "main": "Cuenta",
+        "settings": "Ajustes",
+        "password": "Contraseña",
+        "sessions": "Sesiones",
+        "login": "Entra",
+        "logout": "Salir"
+      },
+      "admin": {
+        "main": "Administración",
+        "userManagement": "Gestión de usuarios",
+        "tracker": "Seguimiento de usuarios",
+        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
+      },
+      "language": "Idioma"
+    },
+    "form": {
+      "username.label": "Usuario",
+      "username.placeholder": "Su nombre de usuario",
+      "currentpassword.label": "Contraseña actual",
+      "currentpassword.placeholder": "Contraseña actual",
+      "newpassword.label": "Nueva contraseña",
+      "newpassword.placeholder": "Nueva contraseña",
+      "confirmampassword.label": "Confirmación de nueva contraseña",
+      "confirmampassword.placeholder": "Confirmar nueva contraseña",
+      "email.label": "E-mail",
+      "email.placeholder": "Su e-mail"
+    },
+    "messages": {
+      "info": {
+        "notSaved": "No guardado",
+        "noChanges": "No se realizaron cambios.",
+        "authenticated": {
+          "prefix": "Si lo desea",
+          "link": "entrar",
+          "suffix": ", utilizar las siguientes cuentas estándar:<br/>- Administrador (usuario=\"admin\" y contraseña=\"admin\") <br/>- Usuario (usuário=\"user\" y contraseña=\"user\")."
+        }
+      },
+      "error": {
+        "dontmatch": "¡La contraseña y la confirmación deben ser iguales!"
+      },
+      "validate": {
+        "password": {
+          "required": "Campo es obligatorio.",
+          "minlength": "La contraseña debe tener al menos 8 caracteres",
+          "maxlength": "La contraseña no puede superar los 50 caracteres",
+          "pattern": "La contraseña debe constar de mayúsculas, minúsculas, números, caracteres especiales (@ * ! % ; : . ) y tener entre 8 y 30 caracteres."
+        },
+        "confirmPassword": {
+          "required": "Campo es obligatorio.",
+          "confirmPasswordNotEquals": "Las contraseñas deben ser las mismas."
+        },
+        "email": {
+          "required": "O e-mail es obligatorio.",
+          "invalid": "E-mail no válido.",
+          "minlength": "El usuario de e-mail debe tener al menos 3 caracteres.",
+          "maxlength": "El e-mail debe tener un máximo de 254 caracteres."
+        },
+        "login": {
+          "minlength": "Inicio de sesión debe tener al menos 3 caracteres.",
+          "maxlength": "Inicio de sesión debe tener un máximo de 20 caracteres."
+        },
+        "firstname": {
+          "minlength": "El nombre debe tener al menos 3 caracteres.",
+          "maxlength": "El nombre debe tener un máximo de 50 caracteres."
+        },
+        "lastname": {
+          "minlength": "El apellido debe tener al menos 1 carácter.",
+          "maxlength": "El apellido debe tener un máximo de 20 caracteres."
+        },
+        "productName": {
+          "required": "El campo es obligatorio",
+          "maxlength": "Este campo debe tener un máximo de 50 caracteres.",
+          "minlength": "El nombre debe tener al menos 3 caracteres.",
+          "lengthName": "El nombre debe tener entre 3 y 50 caracteres."
+        },
+        "description": {
+          "required": "Se requiere una descripción del producto.",
+          "maxlength": "Este campo debe tener un máximo de 100 caracteres.",
+          "minlength": "La descripción debe tener al menos 3 caracteres."
+        },
+        "profileName": {
+          "minlength": "El nombre debe tener al menos 3 caracteres."
+        }
+      },
+      "loading": "Enviando datos, espere",
+      "loadgindData": "Cargando datos, espere"
+    },
+    "field": {
+      "id": "Código"
+    },
+    "ribbon": {
+      "dev": "Desarrollo"
+    },
+    "item-count": "<div class=\"pagination-pages-info\">Página {{ first }} de {{ second }}</div><div class=\"pagination-count-info\">{{ total }} registro(s) encontrado(s)</div>",
+    "item-count-sgm": "<div class=\"pagination-pages-info\">Página {{ first }} de {{ second }}</div><div class=\"pagination-count-info\">{{ total }} registro(s) encontrado(s)</div>",
+    "roles": {
+      "Administrator": "Administrador",
+      "User": "Usuario"
+    }
+  },
+  "entity": {
+    "main": "Entidades",
+    "user": {
+      "main": "Usuario"
+    },
+    "citizen": {
+      "title": "Servicios al ciudadano",
+      "view": "Ver servicio"
+    },
+    "product": {
+      "main": "Servicio",
+      "edit": "Editar servicio",
+      "register": "Registrar servicio"
+    },
+    "category": {
+      "main": "Categorias de Servicio"
+    },
+    "action": {
+      "back": "Regresar",
+      "cancel": "Cancelar",
+      "delete": "Borrar",
+      "edit": "Editar",
+      "open": "Abrir",
+      "add": "AÑADIR",
+      "save": "Para salvar",
+      "view": "Para ver",
+      "confirmModal": "CONFIRMAR",
+      "cancelModal": "CANCELAR",
+      "deactivate": "Desactivar",
+      "activate": "Activar"
+    },
+    "detail": {
+      "field": "Campo",
+      "value": "Valor"
+    },
+    "delete": {
+      "title": "Confirmar la eliminación"
+    },
+    "validation": {
+      "required": "Campo es obligatorio.",
+      "invalid": "Campo no válido.",
+      "invalidLink": "El enlace insertado no es válido.",
+      "infoTag": "Presione Intro después de escribir una palabra clave.",
+      "infoCompatibleProduct": "Presione Intro después de escribir un producto compatible.",
+      "minlength": "Este campo debe tener al menos {{min}} caracteres.",
+      "maxlength": "Este campo no puede tener más de {{max}} caracteres.",
+      "min": "Este campo debe ser mayor que {{min}}.",
+      "max": "Este campo no puede ser mayor que {{max}}.",
+      "minbytes": "Este campo debe tener al menos {{min}} bytes.",
+      "maxbytes": "Este campo no puede tener más de {{max}} bytes.",
+      "pattern": "Este campo debe estar dentro del siguiente patrón {{ pattern }}.",
+      "number": "Este campo es de tipo numérico.",
+      "datetimelocal": "Este campo es de tipo fecha/hora.",
+      "patternLogin": "Este campo solo puede contener letras, dígitos y direcciones de correo electrónico con una longitud máxima de 20 caracteres."
+    }
+  },
+  "error": {
+    "internalServerError": "Error interno del servidor",
+    "server.not.reachable": "Servidor no disponible",
+    "url.not.found": "No encontrado",
+    "NotNull": "¡El campo {{fieldName}} no puede estar vacío!",
+    "Size": "¡El campo {{fieldName}} no cumple con los requisitos de tamaño mínimo o máximo!",
+    "userexists": "Inicio de sesión ya registrado en el sistema.",
+    "emailexists": "¡Este e-mail ya está en uso!",
+    "idexists": "El nuevo {{entityName}} no puede tener un identificador",
+    "idnull": "Identificador no válido",
+    "profilenameexists": "Ya existe un perfil registrado con este nombre",
+    "unauthorizedLanguagePT_BR": "No puede editar datos en portugués (Brasil)",
+    "unauthorizedLanguageEN": "No se le permite editar datos en inglés",
+    "unauthorizedLanguageES": "No puedes editar datos en español",
+    "unauthorizedTokenError": "Su sesión ha expirado. Vuelva a iniciar sesión para seguir usando el sistema"
+  },
+  "footer": "Este es el pie de página de la página",
+  "authorities": {
+    "list": {
+      "name": "Nombre",
+      "description": "Descripción",
+      "id": "ID"
+    },
+    "messages": {
+      "error": "No se pudieron enumerar los permisos. Vuelve a intentarlo."
+    }
+  },
+  "profiles": {
+    "list": {
+      "name": "Nombre",
+      "description": "Descripción",
+      "authorities": "Permisos"
+    },
+    "create": {
+      "authorities": "Permisos",
+      "labelname": "Nombre",
+      "labeldescription": "Descripción",
+      "error": {
+        "invalidField": "Verifique los datos completados."
+      }
+    },
+    "messages": {
+      "error": "Los perfiles no se pudieron listar, inténtelo de nuevo.",
+      "createsuccess": "Perfil cadastrado.",
+      "createerror": "No se pudo registrar el perfil, inténtelo de nuevo.",
+      "savesuccess": "Perfil actualizado.",
+      "noProfilesFound": "No se encontró ningún perfil.",
+      "cannotUpdatedAdminProfile": "No se puede actualizar el perfil de administrador.",
+      "internetError": "No hay conexión a Internet."
+    },
+    "error": {
+      "internetError": "No hay conexión a Internet.",
+      "serverError": "Se perdió la conexión con el servidor.",
+      "gatewayTimeout": "Servidor no disponible temporalmente."
+    }
+  }
+}

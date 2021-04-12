@@ -1,0 +1,19 @@
+<div class="d-flex flex-column">
+    <div class="container-label">
+        <span id="category-page-heading" class="title-page" jhiTranslate="entity.category.main">Categories</span>
+    </div>
+
+
+    <div class="categories-container d-flex justify-content-center flex-row">
+        <div id="root-categories" class="vertical-section root-categories">
+            <sgm-category-item (click)="selectCategory(category)" [selected]="category === selectedCategory"
+                                 *ngFor="let category of categories" [category]="category">
+            </sgm-category-item>
+
+            <ng-container *sgmHasAnyAuthority="['ROLE_RW_SERVICE']">
+                <sgm-category-item (onSave)="loadCategories()">
+                </sgm-category-item>
+            </ng-container>
+        </div>
+    </div>
+</div>

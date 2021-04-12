@@ -1,0 +1,10 @@
+/* This class override all badges. To change color set property "badge-" + "color-name" */
+.badge {
+  text-transform: initial;
+  text-align: center;
+  font-size: 10px;
+  white-space: nowrap;
+  border-radius: 64px;
+  font-weight: 100;
+  padding: 4px 12px 4px 12px;
+}

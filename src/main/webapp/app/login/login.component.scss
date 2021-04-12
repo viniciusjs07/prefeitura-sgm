@@ -1,0 +1,293 @@
+$min-width-lg: 993px;
+$max-width-lg: 1199px;
+$max-width-xl-6: 1612px;
+
+$min-width-xl: 1252px;
+$max-width-xl: 1612px;
+$min-width-xl-6: 1501px;
+$max-width-sm: 457px;
+$black: #000000;
+
+::placeholder {
+  color: #707070;
+  font-size: 15px;
+  opacity: 100%;
+}
+
+fa-icon {
+  color: #1e9dd4;
+  display: block;
+  background-color: #1e9dd4;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.input-focus {
+  margin: auto;
+  width: 90%;
+}
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #F5F4FC inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #F5F4FC inset !important;
+}
+
+input[type='text'] {
+  border: none;
+  color: $black;
+  font-size: 15px;
+  opacity: 100%;
+  background-color: #F5F4FC !important;
+  margin: auto;
+  height: 54px;
+}
+
+input[type='text']:focus :active {
+  background-color: #F5F4FC;
+}
+
+input[type='password'] {
+  border: none;
+  color: $black;
+  font-size: 15px;
+  opacity: 100%;
+  background-color: #F5F4FC;
+  margin: auto;
+  height: 54px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.container .logo-puc-minas {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 50%;
+  max-width: 50%;
+  height: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 4px 50px;
+  text-align: center;
+  z-index: 2;
+}
+
+.width-select {
+  width: 38%;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.background-select {
+  background-color: transparent;
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem transparent !important;
+}
+
+select option:first-child {
+  color: black;
+  font-size: 14px;
+  opacity: 1;
+}
+
+select.empty {
+  color: black;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* Hidden placeholder */
+select option[disabled]:first-child {
+  display: none;
+  color: black;
+}
+
+.remember-margin {
+  margin-bottom: 1.0rem;
+  margin-top: 1.0rem;
+  margin-left: 24px;
+}
+
+div > div > div.col-12 > div.row {
+  display: block !important;
+}
+
+.btn-sign-in {
+  margin-bottom: 1.5rem;
+}
+
+.align-title {
+  text-align: center;
+  margin-bottom: 10px;
+
+  .app-title {
+    letter-spacing: 0;
+    opacity: 1;
+    color: #9B99A9;
+    font-size: 13px;
+  }
+}
+
+.title-remember {
+  font-size: 13px;
+  opacity: 1;
+  color: #4d596a
+}
+
+.space-div {
+  padding-bottom: 6px;
+}
+
+.title-info {
+  text-align: center;
+  letter-spacing: 0;
+  font-size: 13px;
+  color: #93A6B9;
+  margin: 0 auto;
+  display: block;
+  opacity: 1;
+}
+
+.bg-white {
+  background-color: #F5F4FC !important;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #1e9dd4;
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+  width: 260px;
+  height: 55px;
+  font-size: 13px;
+  font-weight: bold;
+  max-width: 260px;
+}
+
+.btn-recover-pass {
+  margin-bottom: 1rem;
+
+  .recover-pass {
+    color: #1e9dd4;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.region-wrapper {
+  margin: auto;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.region-label {
+  margin: 0 10px;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.region-icon {
+  font-size: 15px;
+}
+
+.region-container {
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+.container-terms-of-Service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-terms-of-Service span {
+  font-size: x-small;
+}
+
+.container-terms-of-Service a {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: x-small;
+}
+
+.and {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.terms {
+  margin-left: 5px;
+}
+
+
+@media (min-width: #{$min-width-xl-6}) {
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 30% !important;
+  }
+}
+
+@media (min-width: #{$min-width-lg}) and (max-width: #{$max-width-lg}) {
+  .col-lg-8 {
+    flex: 0 0 50%;
+    max-width: 45% !important;
+  }
+}
+
+@media (min-width: #{$min-width-xl}) and (max-width: #{$max-width-xl}) {
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 35% !important;
+  }
+}
+
+@media (max-width: #{$max-width-sm}) {
+  .container .app {
+    font-size: 14px;
+    height: 30px;
+  }
+
+}
+
+@media (max-width: 430px) {
+  .container .app {
+    font-size: 12px;
+    height: 40px;
+  }
+
+}
+

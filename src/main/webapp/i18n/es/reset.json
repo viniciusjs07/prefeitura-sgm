@@ -1,0 +1,28 @@
+{
+  "reset": {
+    "request": {
+      "title": "Nueva contraseña",
+      "form": {
+        "button": "Crear nueva contraseña"
+      },
+      "messages": {
+        "info": "Introduzca la dirección de e-mail utilizada en el registro",
+        "success": "Se envió un e-mail con un enlace e instrucciones para recuperar su contraseña. Si no lo está viendo, marque la casilla SPAM en su e-mail.",
+        "notfound": "¡Dirección de e-mail no registrada! Verifíquela e inténtelo de nuevo"
+      }
+    },
+    "finish": {
+      "title": "Ingrese su nueva contraseña",
+      "subtitle": "Elige una nueva contraseña",
+      "form": {
+        "button": "Confirmar"
+      },
+      "messages": {
+        "info": "Elige una nueva contraseña",
+        "success": "<strong> Tu contraseña se ha cambiado correctamente. </strong> Por favor",
+        "keymissing": "Restablecer clave no encontrada",
+        "error": "Su contraseña no se puede cambiar. Recuerde, la solicitud de cambio de contraseña solo es válida durante 24 horas."
+      }
+    }
+  }
+}

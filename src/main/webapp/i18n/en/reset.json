@@ -1,0 +1,28 @@
+{
+  "reset": {
+    "request": {
+      "title": "Reset your password",
+      "form": {
+        "button": "Reset password"
+      },
+      "messages": {
+        "info": "Enter the email address you used to register",
+        "success": "An email with a link and instructions for recovering your password has been sent. If you are not viewing it, check your SPAM box in your email.",
+        "notfound": "Email address isn't registered! Please check and try again"
+      }
+    },
+    "finish": {
+      "title": "Enter your new password",
+      "subtitle": "Choose a new access password",
+      "form": {
+        "button": "Confirm"
+      },
+      "messages": {
+        "info": "Choose a new password",
+        "success": "<strong>Your password has been reset.</strong> Please ",
+        "keymissing": "The reset key is missing.",
+        "error": "Your password couldn't be reset. Remember a password request is only valid for 24 hours."
+      }
+    }
+  }
+}

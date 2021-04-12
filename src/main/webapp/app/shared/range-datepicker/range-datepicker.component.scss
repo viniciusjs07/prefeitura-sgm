@@ -1,0 +1,51 @@
+.custom-day {
+  text-align: center;
+  padding: 0.185rem 0.25rem;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.custom-day.focused {
+  background-color: #e6e6e6;
+}
+
+.custom-day.range,
+.custom-day:hover {
+  background-color: rgb(2, 117, 216);
+  color: white;
+}
+
+.invalid {
+  opacity: .4;
+}
+
+.custom-day.faded {
+  background-color: rgba(2, 117, 216, 0.5);
+}
+
+.container-datepicker {
+  position: relative;
+  height: 36px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f5f4fc;
+
+  span:hover {
+    cursor: pointer;
+  }
+
+  ngb-datepicker {
+    position: absolute;
+    top: 40px;
+    background-color: white;
+  }
+}
+
+.open-left {
+  right: 0;
+}
+
+.open-right {
+  left: 0;
+}

@@ -1,0 +1,38 @@
+<div class="table-responsive" *ngIf="profiles">
+
+    <table class="table e-table" aria-describedby="settings-page-heading">
+        <thead>
+        <tr>
+            <th scope="col" jhiTranslate="profiles.list.name">Name</th>
+            <th scope="col" jhiTranslate="profiles.list.description">Description</th>
+            <th scope="col" jhiTranslate="profiles.list.authorities">Authorities</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor=" let profile of profiles;">
+            <td class="font-weight-bold">{{profile.name}}</td>
+            <td>{{profile.description}}</td>
+            <td>
+                <div *ngFor="let authority of profile.authorities">
+                    <span class="badge font-weight-bold">{{('permission.' + authority.name).toLocaleLowerCase() | translate}}</span>
+                </div>
+            </td>
+            <td class="text-right">
+                <div class="btn-group flex-btn-group-container">
+                    <div class="col-4">
+                        <fa-icon *ngIf="!disableEdit(profile)" class="edit-button" (click)="goToEditProfile(profile.id)"
+                                 [icon]="'pencil-alt'"></fa-icon>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="profiles?.length" class="d-flex flex-row justify-content-between p-2 pt-4">
+    <sgm-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></sgm-item-count>
+    <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5"
+                    [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+</div>

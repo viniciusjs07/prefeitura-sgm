@@ -1,0 +1,46 @@
+{
+  "product": {
+    "page": {
+      "headPage": "ADMINISTRACIÓN"
+    },
+    "searchPlaceholder": "Buscar servicio",
+    "activate": "Servicio habilitante",
+    "activateBody": "¿Se marcará el Servicio como activo, confirmar?",
+    "deactivate": "Desactivando servicio",
+    "deactivateBody": "¿Se marcará el Servicio como inactivo, confirmar?",
+    "home": {
+      "title": "Servicios",
+      "createProduct": "Servicio",
+      "categories": "Categorías"
+    },
+    "form": {
+      "addProduct": "Registrar servicio",
+      "editProduct": "Detalles del servicio",
+      "name": "Nombre",
+      "description": "Descripción",
+      "categories": "Categorías",
+      "invalidCategory": "Categoría inhabilitada",
+      "details": "Detalles"
+    },
+    "error": {
+      "onSave": "El servicio no se pudo registrar.",
+      "onUpdate": "El servicio no se pudo actualizar.",
+      "noProductsFound": "No se encontraron productos.",
+      "alreadyModelWithName": "Ya existe un modelo de servicio registrado con ese nombre.",
+      "invalidField": "Verifique los datos completos.",
+      "internetError": "No hay conexión a Internet.",
+      "serverError": "Se perdió la conexión con el servidor.",
+      "alreadyProductWithName": "Ya existe un servicio registrado con ese nombre.",
+      "gatewayTimeout": "Servidor no disponible temporalmente.",
+      "minlength": "El nombre del servicio debe tener al menos 3 caracteres.",
+      "cannotBeNull": "El nombre del servicio no puede estar vacío."
+    },
+    "success": {
+      "onSave": "servicio registrado",
+      "onUpdate": "servicio actualizado",
+      "onDelete": "servicio eliminado.",
+      "onDeactivate": "servicio deshabilitado",
+      "onActivate": "servicio activado"
+    }
+  }
+}

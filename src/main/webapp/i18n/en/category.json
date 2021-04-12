@@ -1,0 +1,32 @@
+{
+    "category": {
+        "promptDeactivate": "Deactivate Category",
+        "confirmDeactivate": "Confirm deactivating?",
+
+        "promptActivate": "Activate Category",
+        "confirmActivate": "Confirm activating?",
+
+        "activate": "Activate",
+        "deactivate": "Deactivate",
+        "edit": "Edit",
+
+        "categoryDeactivated": "Category Deactivated",
+        "categoryActivated": "Category Activated",
+        "inputName": "Category Name",
+
+        "error": {
+            "onCreate": "Couldn't create Category",
+            "onUpdate": "Couldn't update Category",
+            "onLoad": "Couldn't load categories",
+            "minLength": "Category must have at least 3 characters",
+            "internetError": "No internet connection.",
+            "serverError": "The connection to the server has been lost.",
+            "duplicatedName": "There's another category on this list with same name.",
+            "gatewayTimeout": "Server temporarily unavailable."
+        },
+        "success": {
+            "onCreate": "Category created",
+            "onUpdate": "Category updated"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "health": {
+    "title": "Estado del sistema",
+    "refresh.button": "actualizar",
+    "stacktrace": "stacktrace",
+    "details": {
+      "details": "Detalles",
+      "properties": "Propiedades",
+      "name": "Nombre",
+      "value": "Valor",
+      "error": "Error"
+    },
+    "indicator": {
+      "diskSpace": "Espacio en disco",
+      "mail": "E-mail",
+      "elasticsearch": "Elasticsearch",
+      "db": "Base de datos"
+    },
+    "table": {
+      "service": "Nombre del Servicio",
+      "status": "Estado"
+    },
+    "status": {
+      "UNKNOWN": "DESCONOCIDO",
+      "UP": "UP",
+      "DOWN": "DOWN"
+    },
+    "error": "El estado del sistema no está disponible actualmente.",
+    "serverunavailable": "Servidor actualmente no disponible."
+  }
+}

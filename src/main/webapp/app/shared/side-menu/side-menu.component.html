@@ -1,0 +1,77 @@
+<div class="menu-app" *ngIf="isAuthenticated()">
+    <div class="row text-center margin-avatar">
+        <div class="col">
+            <div class="container">
+                <img class="avatar" [src]="'content/images/login/avatar.png'"
+                     alt="image the user">
+            </div>
+        </div>
+    </div>
+    <div class="row text-center margin-user">
+        <div class="col">
+            <span class="label-user">{{ loggedUser?.firstName | titlecase }}&nbsp;{{ loggedUser?.lastName | titlecase }}</span>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <span class="label-email">{{ loggedUser?.email }}</span>
+        </div>
+    </div>
+
+    <div class="menu-top text-left" id="container-item">
+        <div class="col-10">
+            <div class="row" *sgmHasAnyAuthority="['ROLE_RW_USER', 'ROLE_R_USER']">
+
+                <dl>
+                    <dt class="menu-item nav-item"
+                        routerLink="entity/user"
+                        routerLinkActive="active">
+                        <a class="nav-link">
+                            <span jhiTranslate="itemmenu.users">Users</span>
+                        </a>
+                    </dt>
+                </dl>
+            </div>
+
+
+            <div class="row"
+                 *sgmHasAnyAuthority="['ROLE_RW_USER', 'ROLE_R_USER', 'ROLE_RW_SERVICE', 'ROLE_R_SERVICE', 'ROLE_R_CITIZEN']">
+                <dl>
+                    <dt class="menu-item nav-item"
+                        routerLink="/entity/citizen"
+                        routerLinkActive="active">
+                        <a class="nav-link">
+                            <span jhiTranslate="itemmenu.citizen">Cidadão</span>
+                        </a>
+                    </dt>
+                </dl>
+            </div>
+
+            <div class="row" *sgmHasAnyAuthority="['ROLE_RW_SERVICE', 'ROLE_R_SERVICE']">
+                <dl>
+                    <dt class="menu-item nav-item"
+                        routerLink="/entity/service"
+                        routerLinkActive="active">
+                        <a class="nav-link">
+                            <span jhiTranslate="itemmenu.services">Serviços</span>
+                        </a>
+                    </dt>
+                </dl>
+            </div>
+            <div class="row"
+                 *sgmHasAnyAuthority="['ROLE_RW_PROFILE', 'ROLE_R_PROFILE']">
+                <dl>
+                    <dt class="menu-item nav-item" routerLink="account/settings"
+                        routerLinkActive="active">
+                        <a class="nav-link">
+                            <span jhiTranslate="itemmenu.settings">Settings</span>
+                        </a>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,12 @@
+<div class="item-container flex-grow-1 justify-content-between d-flex"
+     [class.category-selected]="selected" [id]="'category-' + (category.id || 'new')">
+
+    <div class="name-container flex-grow-1 d-flex">
+        <div *ngIf="!editing" class="category-name flex-grow-1">
+            {{ category.name }}
+            <div *ngIf="!category.activated" class="signal inactive-signal"></div>
+        </div>
+    </div>
+    <fa-icon *ngIf="reader && category.subCategories.length" class="category-options-button"
+             icon="chevron-right"></fa-icon>
+</div>

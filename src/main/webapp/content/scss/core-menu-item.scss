@@ -1,0 +1,53 @@
+
+#container-item .nav-link > span {
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0;
+  padding-left: 20px;
+  color: #ffff
+}
+
+.nav-link {
+  padding: 0;
+  width: 100%;
+}
+
+.menu-top {
+  margin-top: 25px;
+  max-width: 100%;
+  height: 100%;
+}
+
+.icon-size {
+  width: 20px;
+}
+
+.menu-item {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  padding: 4px 20px 4px 25px !important;
+  margin: 0 25px 0 25px !important;
+}
+
+#container-item dl > dt:focus {
+  outline: none !important;
+}
+
+#container-item .active {
+  border: 1px solid #D6D6D6 !important;
+  border-radius: 28px !important;
+
+  .icon-fill-active {
+    filter: invert(40%) sepia(80%) saturate(894%) hue-rotate(188deg) brightness(89%) contrast(93%);
+  }
+
+  .nav-link > span {
+    color: #ffff !important;
+  }
+}
+
+
+
+
+

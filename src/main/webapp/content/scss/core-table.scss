@@ -1,0 +1,109 @@
+/*
+    Apply to <table> element and it's done
+    Use table structure like:
+    <table class="e-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            <tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            <tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            <tr>
+        </tbody>
+    </table>
+*/
+.e-table {
+    border-collapse: separate;
+    border-spacing: 0;
+
+    thead {
+        background-color: #F9F9F9;
+
+        > tr {
+            height: 46px;
+            font-size: 11px;
+            opacity: .6;
+
+            > th {
+                vertical-align: middle;
+                border-top: 1px solid #E1E1E1;
+                border-bottom: 1px solid #E1E1E1;
+                border-left: 0px solid;
+                border-right: 0px solid;
+            }
+
+            > th:first-child{
+                border-radius:10px 0 0 10px;
+                border-left: 1px solid #E1E1E1;
+            }
+
+            > th:last-child{
+                border-radius:0 10px 10px 0;
+                border-right: 1px solid #E1E1E1;
+            }
+        }
+    }
+
+    thead > tr > th:first-child,
+    tbody > tr > td:first-child {
+        padding-left: 30px;
+    }
+
+    tbody > tr > td {
+        height: 50px;
+        min-height: 50px;
+        vertical-align: middle;
+        font-size: 12px;
+        color: #3D3D3D;
+
+        border-top: none;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .edit-button, .icon-button {
+        padding: 10px;
+    }
+
+    .edit-button:hover, .icon-button:hover {
+        cursor: pointer;
+    }
+
+    .flex-btn-group-container > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        > * {
+            display: flex;
+        }
+    }
+
+    .fa-disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        padding: 10px;
+    }
+    .fa-disabled:focus {
+        outline: none;
+    }
+
+
+}
+
+.background-gray-button {
+    background-color: #3333332e;
+    border-radius: 50%;
+    height: 4vh !important;
+}
+

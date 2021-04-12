@@ -1,0 +1,9 @@
+{
+  "profile": {
+    "error": {
+      "internetError": "No internet connection.",
+      "serverError": "The connection to the server has been lost.",
+      "gatewayTimeout": "Server temporarily unavailable."
+    }
+  }
+}

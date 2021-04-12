@@ -1,0 +1,44 @@
+<div>
+    <div class="container-label">
+        <span id="settings-page-heading" class="title-page" jhiTranslate="settings.title">Settings</span>
+    </div>
+    <div class="container-navs d-flex flex-row">
+        <ul class="nav nav-tabs flex-fill mr-1 w-25">
+            <li class="nav-item" *sgmHasAnyAuthority="['ROLE_R_PROFILE', 'ROLE_RW_PROFILE']">
+                <a class="nav-link" [class.active]="goPageSelect==='listProfile' || goPageSelect==='createProfile'"
+                   (click)="goToProfile()"
+                   jhiTranslate="settings.navs.profiles">Profiles</a>
+            </li>
+            <li class="nav-item" *sgmHasAnyAuthority="['ROLE_R_PROFILE', 'ROLE_RW_PROFILE']">
+                <a class="nav-link" [class.active]="goPageSelect==='authorityPage'"
+                   jhiTranslate="settings.navs.authorities" (click)="goToAuthority()">Authorities</a>
+            </li>
+        </ul>
+
+        <sgm-search class="float-right" placeholder="{{ 'settings.profile.searchPlaceholder'  | translate }}"
+                      (modelChange)="profileComponent.setFilter($event)" *ngIf="goPageSelect === 'listProfile'">
+        </sgm-search>
+
+        <ng-container *sgmHasAnyAuthority="['ROLE_RW_PROFILE']">
+            <button class="btn-profile btn btn-primary float-right" (click)="goToCreateProfile()"
+                    *ngIf="goPageSelect==='listProfile'">
+                <fa-icon [icon]="'plus'"></fa-icon>
+                <span jhiTranslate="settings.btn.createprofile">Create Profile</span>
+            </button>
+        </ng-container>
+    </div>
+
+    <ng-container>
+        <div class="container-component" *ngIf="goPageSelect === 'listProfile'">
+            <sgm-profile (navigateProfileEdit)="goToEditProfile($event)" #profileComponent></sgm-profile>
+        </div>
+
+        <div class="container-component" *ngIf="goPageSelect === 'authorityPage'">
+            <sgm-authorities></sgm-authorities>
+        </div>
+
+        <div class="container-component" *ngIf="goPageSelect === 'createProfile'">
+            <sgm-profile-form [profileId]="profileId" (listProfilePage)="goToProfile()"></sgm-profile-form>
+        </div>
+    </ng-container>
+</div>

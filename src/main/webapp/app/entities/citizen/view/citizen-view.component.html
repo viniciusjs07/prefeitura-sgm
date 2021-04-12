@@ -1,0 +1,204 @@
+<div class="h-100 d-flex flex-column">
+    <div sgmReadonly="ROLE_RW_SERVICE"
+         class="container-form d-flex flex-column flex-fill" *ngIf="service">
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-row flex-wrap justify-content-start">
+                <div class="pr-5">
+                    <div class="e-input-wrapper mb-3">
+                        <h1 class="service-title">{{service.name}} </h1>
+                    </div>
+                </div>
+
+                <div class="e-input-wrapper mb-3 col-12">
+                    <p class="service-description">{{service.description}}</p>
+                </div>
+            </div>
+
+            <div class="e-input-wrapper mt-3 mb-3">
+                <h3>Categoria do Serviço</h3>
+                <div class="service-category">
+                    <span class="label-primary">{{service.category.name}}</span>
+                </div>
+
+                <div class="e-input-wrapper mt-3 mb-3">
+                    <h3>Quem pode utilizar esse serviço?</h3>
+                    <div class="service-category">
+                        <span *ngIf="service.id != 4">Cidadão</span>
+                        <span *ngIf="service.id == 4">É o trabalho realizado para recuperar pontos da malha viária da capital que possuem buracos.O material é o
+                            Concreto Betuminoso Usinado a Quente (CBQU), indicado para vias urbanas. Esse material é uma mistura de areia, brita e um ligante,
+                            o Cimento Asfáltico de Petróleo (CAP). Antes de colocar a camada de CBQU,
+                            as equipes operacionais retiram o material encharcado do buraco, colocam brita e aplicam o asfalto.</span>
+                    </div>
+                </div>
+
+                <div class="e-input-wrapper mt-3 mb-3" *ngIf="service.id == 1">
+                    <h3>Etapas para a realização desse serviço?</h3>
+                    <div class="step">
+                        <div class="sub-step">
+                            <span class="badge-step">1</span>
+                            <div class="label-badge">
+                                <h4>Após deferimento e com a disponibilidade de unidades habitacionais, aguardar sorteio
+                                    do imóvel.</h4>
+                            </div>
+                        </div>
+                        <div class="sub-step">
+                            <span class="badge-step">2</span>
+                            <div class="label-badge">
+                                <h4>Agendamento prévio online.</h4>
+                            </div>
+                        </div>
+                        <div class="sub-step">
+                            <span class="badge-step">3</span>
+                            <div class="label-badge">
+                                <h4>Aguardar análise da instituição financeira.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Taxas do Serviço?</h3>
+                    <div class="e-input-wrapper mb-3">
+                        <p class="sub-taxa">Cadastro gratuito. A parcela referente ao imóvel varia entre R$ 80 e R$
+                            270), calculada de acordo com a renda familiar comprovada.</p>
+                    </div>
+                </div>
+
+                <div class="e-input-wrapper mt-3 mb-3" *ngIf="service.id == 2">
+                    <h3>Etapas para a realização desse serviço?</h3>
+                    <div class="step">
+                        <div class="sub-step">
+                            <span class="badge-step">1</span>
+                            <div class="label-badge">
+                                <h4>Ligar para o serviço de limpeza de Bom destino no telefone 0800 000 0007 </h4>
+
+                            </div>
+                        </div>
+                        <div class="sub-step">
+                            <span class="badge-step">2</span>
+                            <div class="label-badge">
+                                <h4>Acesse o link abaixo</h4>
+                                <span class="link-step">https://www.bomdestino.sgm.br/disque-limpeza/</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="e-input-wrapper mt-3 mb-3" *ngIf="service.id == 3">
+                    <h3>Etapas para a realização desse serviço?</h3>
+                    <div class="step">
+                        <div class="sub-step">
+                            <span class="badge-step">1</span>
+                            <div class="label-badge">
+                                <h4>Entrar em contato com a Secretaria de Saúde para informar o endereço do foco e
+                                    aguardar a visita da equipe.</h4>
+                                <h4>Telefone de contato (83) 0000- 0000</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="e-input-wrapper mt-3 mb-3" *ngIf="service.id == 4">
+                    <h3>Etapas para a realização desse serviço?</h3>
+                    <div class="step">
+                        <div class="sub-step">
+                            <span class="badge-step">1</span>
+                            <div class="label-badge">
+                                <h4>Solicitar o serviço indo diretamente à Seminfra ou através dos telefones 0000-0005 e
+                                    0000-0002.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="e-input-wrapper mt-3 mb-3" *ngIf="service.id == 5">
+                    <h3>Etapas para a realização desse serviço?</h3>
+                    <div class="step">
+                        <div class="sub-step">
+                            <span class="badge-step">1</span>
+                            <div class="label-badge">
+                                <h4>Acessar ao site do orgão responsável da prefeitura e preencher os campos com as informações solicitadas.</h4>
+                                <h4>Informações: (83) 0000-0003</h4>
+                                <span class="link-step">https://www.bomdestino-transito.sgm.br/infracoes/</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="e-input-wrapper mt-3 mb-3" *ngIf="service.id == 6">
+                    <h3>Etapas para a realização desse serviço?</h3>
+                    <div class="step">
+                        <div class="sub-step">
+                            <span class="badge-step">1</span>
+                            <div class="label-badge">
+                                <h4>Acessar o site da ouvidoria.</h4>
+                                <span class="link-step">https://www.bomdestino-ouvidoria.sgm.br</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="e-input-wrapper mt-3 mb-3" *ngIf="service.id == 7">
+                    <h3>Etapas para a realização desse serviço?</h3>
+                    <div class="step">
+                        <div class="sub-step">
+                            <span class="badge-step">1</span>
+                            <div class="label-badge">
+                                <h4>Fornecer o número da plaqueta de identificação (localizada no poste, tem a cor
+                                    verde)</h4>
+
+                            </div>
+                        </div>
+                        <div class="sub-step">
+                            <span class="badge-step">2</span>
+                            <div class="label-badge">
+                                <h4>Ligar para o Disque Luz, falar com um dos atendentes do Call Center e solicitar a
+                                    troca da lâmpada ou conserto da luminária.</h4>
+                                <p class="step-finsh">
+                                    Ligar para o número 0800 000 0006
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-input-wrapper mt-3 mb-3" *ngIf="service.id == 13">
+                    <h3>Etapas para a realização desse serviço?</h3>
+                    <div class="step">
+                        <div class="sub-step">
+                            <span class="badge-step">1</span>
+                            <div class="label-badge">
+                                <h4>Gerar guia.</h4>
+
+                            </div>
+                        </div>
+                        <div class="sub-step">
+                            <span class="badge-step">2</span>
+                            <div class="label-badge">
+                                <h4>Acessar o site destinado a emissão de guias.</h4>
+
+                                <span class="link-step">https://www.stur.sgm.br/emissao-de-guias/</span>
+                            </div>
+                        </div>
+                        <div class="sub-step">
+                            <span class="badge-step">3</span>
+                            <div class="label-badge">
+                                <h4>Realizar pagamento.</h4>
+                                <p class="step-finsh">
+                                    Rua Lorem ipsum, nº 47, Centro - Bom Destino/PB // Fone: (83) 0000-0000
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-between mt-auto mb-5">
+                    <div>
+                        <button type="button" class="btn btn-secondary" (click)="previousState()">
+                            <span jhiTranslate="entity.action.cancel">Cancel</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,227 @@
+{
+  "global": {
+    "title": "SGM System",
+    "select": {
+      "noItemsFound": "No items found"
+    },
+    "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
+    "menu": {
+      "home": "Home",
+      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+      "entities": {
+        "main": "Entities",
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+      },
+      "account": {
+        "main": "Account",
+        "settings": "Settings",
+        "password": "Password",
+        "sessions": "Sessions",
+        "login": "Sign in",
+        "logout": "Sign out"
+      },
+      "admin": {
+        "main": "Administration",
+        "userManagement": "User management",
+        "tracker": "User tracker",
+        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
+      },
+      "language": "Language"
+    },
+    "form": {
+      "username.label": "Username",
+      "username.placeholder": "Your username",
+      "currentpassword.label": "Current password",
+      "currentpassword.placeholder": "Current password",
+      "newpassword.label": "New password",
+      "newpassword.placeholder": "New password",
+      "confirmpassword.label": "New password confirmation",
+      "confirmpassword.placeholder": "Confirm the new password",
+      "email.label": "Email",
+      "email.placeholder": "Your email"
+    },
+    "messages": {
+      "info": {
+        "notSaved": "Not saved",
+        "noChanges": "No changes were made.",
+        "authenticated": {
+          "prefix": "If you want to ",
+          "link": "sign in",
+          "suffix": ", you can try the default accounts:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- User (login=\"user\" and password=\"user\")."
+        }
+      },
+      "error": {
+        "dontmatch": "The password and its confirmation do not match!"
+      },
+      "validate": {
+        "password": {
+          "required": "Required field.",
+          "minlength": "Your password is required to be at least 8 characters.",
+          "pattern": "The password must consist of uppercase, lowercase letters, numbers, special characters (@ * ! % ; : . ) and have between 8 and 30 characters."
+        },
+        "confirmPassword": {
+          "required": "Required field.",
+          "confirmPasswordNotEquals": "Passwords must be the same."
+        },
+        "email": {
+          "required": "Your email is required.",
+          "invalid": "Your email is invalid.",
+          "minlength": "The user of email must have at least 3 characters.",
+          "maxlength": "Email cannot be longer than 254 characters."
+        },
+        "login": {
+          "maxlength": "Login cannot be longer than 20 characters.",
+          "minlength": "Login must have at least 3 characters."
+        },
+        "firstname": {
+          "maxlength": "Name cannot be longer than 50 characters.",
+          "minlength": "Name must have at least 3 characters."
+        },
+        "lastname": {
+          "maxlength": "Last name cannot be longer than 20 characters.",
+          "minlength": "Last name must have at least 1 characters."
+        },
+        "productName": {
+          "required": "Required field.",
+          "maxlength": "Product name cannot be longer than 50 characters.",
+          "minlength": "Name must have at least 3 characters.",
+          "lengthName": "Name must be between 3 and 50 characters."
+        },
+        "description": {
+          "required": "Product description is required.",
+          "maxlength": "Product reference cannot be longer than 100 characters.",
+          "minlength": "Description must have at least 3 characters."
+        },
+        "profileName": {
+          "minlength": "Name must have at least 3 characters."
+        }
+      },
+      "loading": "Sending data, please wait",
+      "loadgindData": "Loading data, please wait"
+    },
+    "field": {
+      "id": "ID"
+    },
+    "ribbon": {
+      "dev": "Development"
+    },
+    "item-count": "<div class=\"pagination-pages-info\">Page {{ first }} of {{ second }}</div><div class=\"pagination-count-info\">{{ total }} item(s) found</div>",
+    "item-count-sgm": "<div class=\"pagination-pages-info\">Page {{ first }} of {{ second }}</div><div class=\"pagination-count-info\">{{ total }} item(s) found</div>",
+    "roles": {
+      "Administrator": "Administrator",
+      "User": "User"
+    }
+  },
+  "entity": {
+    "main": "Entities",
+    "user": {
+      "main": "User"
+    },
+    "citizen": {
+      "title": "Citizen Services",
+      "view": "View Service"
+    },
+    "product": {
+      "main": "Service",
+      "edit": "Edit service",
+      "register": "Register service"
+    },
+    "category": {
+      "main": "Service Categories"
+    },
+    "action": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "add": "ADD",
+      "edit": "Edit",
+      "open": "Open",
+      "save": "Save",
+      "view": "View",
+      "confirmModal": "CONFIRM",
+      "cancelModal": "CANCEL",
+      "deactivate": "Deactivate",
+      "activate": "Activate"
+    },
+    "detail": {
+      "field": "Field",
+      "value": "Value"
+    },
+    "delete": {
+      "title": "Confirm delete operation"
+    },
+    "validation": {
+      "required": "Required field.",
+      "invalid": "Invalid field.",
+      "invalidLink": "The inserted link is invalid.",
+      "infoTag": "Press enter after typing a keyword.",
+      "infoCompatibleProduct": "Press enter after typing a compatible product.",
+      "minlength": "This field is required to be at least {{ min }} characters.",
+      "maxlength": "This field cannot be longer than {{ max }} characters.",
+      "min": "This field should be at least {{ min }}.",
+      "max": "This field cannot be more than {{ max }}.",
+      "minbytes": "This field should be at least {{ min }} bytes.",
+      "maxbytes": "This field cannot be more than {{ max }} bytes.",
+      "pattern": "This field should follow pattern for {{ pattern }}.",
+      "number": "This field should be a number.",
+      "datetimelocal": "This field should be a date and time.",
+      "patternLogin": "This field can only contain letters, digits, and e-mail addresses with a maximum length of 20 characters."
+    }
+  },
+  "error": {
+    "internalServerError": "Internal server error",
+    "server.not.reachable": "Server not reachable",
+    "url.not.found": "Not found",
+    "NotNull": "Field {{ fieldName }} cannot be empty!",
+    "Size": "Field {{ fieldName }} does not meet min/max size requirements!",
+    "userexists": "This login is already registered.",
+    "emailexists": "Email is already in use!",
+    "idexists": "A new {{ entityName }} cannot already have an ID",
+    "idnull": "Invalid ID",
+    "profilenameexists": "There is already a Profile registered with this name",
+    "unauthorizedLanguagePT_BR": "You cannot edit infos in Portuguese(Brazil)",
+    "unauthorizedLanguageEN": "You cannot edit infos in English",
+    "unauthorizedLanguageES": "You cannot edit infos in Spanish",
+    "unauthorizedTokenError": "Session expired. Log in again to continue"
+  },
+  "footer": "This is your footer",
+  "authorities": {
+    "list": {
+      "name": "Name",
+      "description": "Description",
+      "id": "ID"
+    },
+    "messages": {
+      "error": "Could not list permissions, please try again."
+    }
+  },
+  "profiles": {
+    "list": {
+      "name": "Name",
+      "description": "Description",
+      "authorities": "Authorities"
+    },
+    "create": {
+      "authorities": "Authorities",
+      "labelname": "Name",
+      "labeldescription": "Description",
+      "error": {
+        "invalidField": "Check the filled data."
+      }
+    },
+    "messages": {
+      "error": "Unable to list profiles, please try again.",
+      "createsuccess": "Profile registered.",
+      "createerror": "Unable to register profile, please try again.",
+      "savesuccess": "Profile updated.",
+      "noProfilesFound": "No profile found.",
+      "cannotUpdatedAdminProfile": "Cannot update administrator profile.",
+      "internetError": "No internet connection."
+    },
+    "error": {
+      "internetError": "No internet connection.",
+      "serverError": "The connection to the server has been lost.",
+      "gatewayTimeout": "Server temporarily unavailable."
+    }
+  }
+}

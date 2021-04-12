@@ -1,0 +1,22 @@
+{
+  "login": {
+    "title": "Autenticación",
+    "app": "Sistema SGM",
+    "labelApp": "Administrador",
+    "regionLabel": "Región",
+    "form": {
+      "password": "Contraseña",
+      "password.placeholder": "Su contraseña",
+      "rememberme": "Mantenerme conectado",
+      "button": "ACCEDER",
+      "langKey": "idioma"
+    },
+    "messages": {
+      "error": {
+        "authentication": "¡Error de autenticación! Verifique sus credenciales y vuelva a intentarlo.",
+        "gatewayTimeout": "Servidor no disponible temporalmente.",
+        "internetError": "No hay conexión a Internet."
+      }
+    }
+  }
+}

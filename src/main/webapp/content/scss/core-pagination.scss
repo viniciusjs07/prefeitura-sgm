@@ -1,0 +1,70 @@
+// Overriding necessary properties defined by default on jhipster components for pagination
+ngb-pagination > .pagination {
+    > .page-item > .page-link {
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 2px;
+        width: 40px;
+        height: 40px;
+        padding: 12px 1px 10px 0;
+        background-color: #F5F6FA;
+        color: #3D3D3D;
+        font-size: 13px;
+        border: unset;
+
+        text-align: center;
+    }
+    
+    > .active > .page-link {
+        background-color: #3277DB;
+        color: white;
+    }
+
+    > .page-item > a[aria-label="Next"],
+    > .page-item > a[aria-label="Previous"] {
+        padding-top: 10px;
+    }
+
+    // Zero opacity on next and previous, so we replace them with:
+    > .page-item > a[aria-label="Next"] > span,
+    > .page-item > a[aria-label="Previous"] > span {
+        opacity: 0;
+    }
+
+    // Inserting correct display character on next and previous button
+    > .page-item > a[aria-label="Next"]::after, 
+    > .page-item > a[aria-label="Previous"]::after {
+        content: "V";
+        color: black;
+        font-size: 10px;
+        display: inline-block;
+        transform: scale(.8, 1.7) rotate(-90deg);
+        margin-left: -6px;
+    }
+
+    // Rotating the left button(previous) to correct side, overriding necessary previously(above) defined styles
+    > .page-item > a[aria-label="Previous"]::after {
+        transform: scale(.8, 1.7) rotate(90deg);
+        margin-left: -10px;
+    }
+
+    // Hid default buttons for first and last on pagination
+    > .page-item > a[aria-label="Last"],
+    > .page-item > a[aria-label="First"] {
+        display: none;
+    }
+}
+
+.pagination-pages-info, .pagination-count-info {
+    color: #3D3D3D;
+}
+
+.pagination-pages-info {
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.pagination-count-info {
+    font-size: 11px;
+}

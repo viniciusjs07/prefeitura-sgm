@@ -1,0 +1,15 @@
+{
+  "permission": {
+    "home": {
+      "title": "Permisos",
+      "listLabel": "Lista de permisos"
+    },
+    "description": "Descripción",
+    "permission": "Permiso",
+    "messageNotPermission": "Permisos no encontrados",
+    "listPermissionEmptyMsg": "No hay ningún permiso registrado en este momento",
+    "internetError": "No hay conexión a Internet.",
+    "serverError": "Se perdió la conexión con el servidor.",
+    "gatewayTimeout": "Servidor no disponible temporalmente."
+  }
+}

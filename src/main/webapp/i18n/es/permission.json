@@ -1,0 +1,12 @@
+{
+  "permission": {
+    "role_rw_service": "Ver y modificar el servicio",
+    "role_rw_profile": "Ver y modificar el perfil",
+    "role_rw_user": "Ver y modificar usuario",
+    "role_r_service": "Ver servicio",
+    "role_r_profile": "Ver perfil",
+    "role_r_user": "Ver usuario",
+    "role_r_citizen": "Ver servicios al ciudadano",
+    "role_rw_citizen": "Ver y modificar los servicios ciudadanos"
+  }
+}

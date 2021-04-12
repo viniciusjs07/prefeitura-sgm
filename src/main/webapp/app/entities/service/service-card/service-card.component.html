@@ -1,0 +1,17 @@
+<div class="product-card d-flex flex-row">
+
+    <div class="infos-container d-flex flex-column">
+        <span class="card-product-name">{{ service.name }}</span>
+        <span class="card-product-model">{{ service.description }}</span>
+        <span class="card-product-type d-flex flex-row flex-wrap" tooltip="{{generateCategoryTooltip()}}"
+              placement="top" show-delay="500">
+            <span>{{'Categoria: ' + service.category?.name }}</span>
+        </span>
+    </div>
+    <div class="toggle-button" (click)="$event.stopPropagation()">
+        <sgm-toggle-button [activated]="service.activated"
+                             [disabledToggle]="toggleDisabled()"
+                             (toggleAction)="promptToggleActivate(service)"
+        ></sgm-toggle-button>
+    </div>
+</div>

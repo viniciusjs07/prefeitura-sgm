@@ -1,0 +1,88 @@
+{
+  "userManagement": {
+    "home": {
+      "title": "Usuários",
+      "createLabel": "Usuário",
+      "createOrEditLabel": "Criar ou editar usuário"
+    },
+    "createUser": {
+      "title": "Cadastrar usuário",
+      "page": "Cadastrar Usuário"
+    },
+    "editUser": {
+      "title": "Editar usuário",
+      "page": "Editar Usuário"
+    },
+    "created": "Novo usuário foi criado com o identificador {{ param }}",
+    "updated": "Usuário com o identificador {{ param }} foi atualizado ",
+    "detail": {
+      "title": "Detalhes do usuário",
+      "creating": "Cadastrar usuário",
+      "notFound": "Usuário não encontrado"
+    },
+    "login": "Login",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "email": "E-mail",
+    "createPassword": "Senha",
+    "password": "Alterar Senha",
+    "confirmPassword": "Confirmar senha",
+    "newPassword": "Nova Senha",
+    "repeatPassword": "Repetir Senha",
+    "activated": "Ativo",
+    "deactivated": "Inativo",
+    "profiles": "Perfis",
+    "langKey": "Idioma",
+    "createdBy": "Criado por",
+    "createdDate": "Criado em",
+    "lastModifiedBy": "Modificado por",
+    "lastModifiedDate": "Modificado em",
+    "status": "Status",
+    "form": {
+      "authorities": {
+        "name": "Nome"
+      }
+    },
+    "reviews": "Avaliações",
+    "info": {
+      "saveSuccess": "Usuário atualizado",
+      "saveError": "Não foi possível atualizar o usuário",
+      "createSuccess": "Usuário cadastrado",
+      "createError": "Não foi possível cadastrar o usuário"
+    },
+    "searchPlaceholder": "Buscar nome ou usuário",
+    "noUserFound": "Nenhum usuário encontrado.",
+    "activate": "Habilitando Usuário",
+    "activateBody": "O Usuário será marcado como ativo, confirmar?",
+    "deactivate": "Desabilitando Usuário",
+    "deactivateBody": "O Usuário será marcado como inativo, confirmar?",
+    "removeBody": "Tem certeza que deseja remover o usuário?",
+    "removeTitle": "Remover Usuário",
+    "success": {
+      "onDeactivate": "Usuário desativado.",
+      "onActivate": "Usuário ativado."
+    },
+    "error": {
+      "invalidField": "Verifque os dados preenchidos.",
+      "adminCannotBeEdited": "O login admin não pode ser alterado.",
+      "adminProfileCannotBeEdited" : "O perfil do admin não pode ser alterado.",
+      "internetError": "Sem conexão à internet.",
+      "serverError": "A conexão com o servidor foi perdida.",
+      "gatewayTimeout": "Servidor temporariamente indisponível.",
+      "blocked": "Sua conta foi bloqueada, por favor solicite ao administrador para ativar sua conta."
+    },
+    "changePassword": {
+      "success": "Senha atualizada com sucesso." ,
+      "error": {
+        "pattern": "Senha fora do padrão.",
+        "userNameInPassword": "Sua senha não pode conter o seu nome.",
+        "oldPassword": "Essa senha já foi utilizada, tente uma nova senha."
+      } 
+    },
+    "delete":{
+      "title": "Excluindo Usuário",
+      "body": "O Usuário será excluído, confirmar?",
+      "success": "Usuário excluído com sucesso"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/**
+ Add here toast color changes if necessary
+
+ Reference: https://www.npmjs.com/package/ngx-toastr
+
+ Add from <page-name>.ts constructor an service type of toast : ToastrService
+
+ in global.scss @import '~ngx-toastr/toastr';
+
+ In app.module exist an configuration for toast:
+           ToastrModule.forRoot({
+            timeOut: TIME_OUT,
+            positionClass: 'toast-bottom-right',
+            preventDuplicates: true,
+        }),
+
+       - The positionClass can be :
+         'toast-top-right',
+         'toast-top-left',
+         'toast-bottom-right',
+         'toast-bottom-left',
+         'inline'
+
+ Example:
+
+  - toast success from controller class
+
+ this.toastr.success('Hello world!', 'Toastr fun!');
+
+  - toast error from controller class
+    this.toastr.error('everything is broken', 'Major Error');
+
+ */

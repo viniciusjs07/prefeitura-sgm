@@ -1,0 +1,88 @@
+{
+  "userManagement": {
+    "home": {
+      "title": "Users",
+      "createLabel": "User",
+      "createOrEditLabel": "Create or edit a user"
+    },
+    "createUser": {
+      "title": "Register user",
+      "page": "Register User"
+    },
+    "editUser": {
+      "title": "Edit user",
+      "page": "Edit User"
+    },
+    "created": "A new user is created with identifier {{ param }}",
+    "updated": "A user is updated with identifier {{ param }}",
+    "detail": {
+      "title": "User details",
+      "creating": "Register user",
+      "notFound": "User not found."
+    },
+    "login": "Login",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "createPassword": "Password",
+    "password": "Change Password",
+    "confirmPassword": "Confirm password",
+    "newPassword": "New Password",
+    "repeatPassword": "Repeat Password",
+    "activated": "Activated",
+    "deactivated": "Deactivated",
+    "profiles": "Profiles",
+    "langKey": "Language",
+    "createdBy": "Created by",
+    "createdDate": "Created date",
+    "lastModifiedBy": "Modified by",
+    "lastModifiedDate": "Modified date",
+    "status": "Status",
+    "form": {
+      "authorities": {
+        "name": "Name"
+      }
+    },
+    "reviews": "Reviews",
+    "info": {
+      "saveSuccess": "User updated",
+      "saveError": "Failed to update user",
+      "createSuccess": "User registered",
+      "createError": "Failed to register user"
+    },
+    "searchPlaceholder": "Search by user or name",
+    "noUserFound": "No user found",
+    "activate": "Activate User",
+    "activateBody": "User will be activated, confirm?",
+    "deactivate": "Deactivate User",
+    "deactivateBody": "User will be deactivated, confirm?",
+    "removeBody": "Are you sure you want to remove the user?",
+    "removeTitle": "Remove User",
+    "success": {
+      "onDeactivate": "User deactivated.",
+      "onActivate": "User activated."
+    },
+    "error": {
+      "invalidField": "Check the filled data.",
+      "adminCannotBeEdited": "The admin login cannot be changed.",
+      "adminProfileCannotBeEdited": "The admin profile cannot be changed.",
+      "internetError": "No internet connection.",
+      "serverError": "The connection to the server has been lost.",
+      "gatewayTimeout": "Server temporarily unavailable.",
+      "blocked": "Your account has been blocked, please ask the administrator to activate your account."
+    },
+    "changePassword": {
+      "success": "Password updated successfully.",
+      "error": {
+        "pattern": "Non-standard password.",
+        "userNameInPassword": "Your password cannot contain your name.",
+        "oldPassword": "This password has already been used, try a new password."
+      } 
+    },
+    "delete":{
+      "title": "Deleting User",
+      "body": "The User will be deleted, confirm?",
+      "success": "User deleted successfully"
+    }
+  }
+}

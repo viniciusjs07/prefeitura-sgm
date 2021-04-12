@@ -1,0 +1,10 @@
+<div class="input-group input-focus">
+    <input type="text"
+           class="input-search"
+           (keyup)="changeFilter($event)"
+           [placeholder]="placeholder">
+    <div class="input-group-prepend">
+        <span class="input-group-text bg-img"><img class="size-img" [src]="'content/images/search-icon.png'"
+                                                   alt="search sgm"></span>
+    </div>
+</div>

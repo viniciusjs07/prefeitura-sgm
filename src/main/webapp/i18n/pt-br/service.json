@@ -1,0 +1,45 @@
+{
+  "product": {
+    "page": {
+      "headPage": "ADMINISTRAÇÃO"
+    },
+    "searchPlaceholder": "Buscar Serviço",
+    "activate": "Habilitando Serviço",
+    "activateBody": "O Serviço será marcado como ativo, confirmar?",
+    "deactivate": "Desabilitando Serviço",
+    "deactivateBody": "O Serviço será marcado como inativo, confirmar?",
+    "home": {
+      "title": "Serviços do Município",
+      "createProduct": "Serviço",
+      "categories": "Categorias"
+    },
+    "form": {
+      "addProduct": "Cadastrar serviço",
+      "editProduct": "Detalhes do serviço",
+      "name": "Nome",
+      "description": "Descrição",
+      "categories": "Categorias",
+      "details": "Detalhes"
+    },
+
+    "error": {
+      "onSave": "Não foi possível cadastrar o serviço.",
+      "onUpdate": "Não foi possível atualizar o serviço.",
+      "noProductsFound": "Nenhum serviço encontrado.",
+      "invalidField": "Verifique os dados preenchidos.",
+      "internetError": "Sem conexão à internet.",
+      "serverError": "A conexão com o servidor foi perdida.",
+      "alreadyProductWithName": "Já existe um serviço registrado com esse nome.",
+      "gatewayTimeout": "Servidor temporariamente indisponível.",
+      "minlength": "Nome do serviço deve ter pelo menos 3 caracteres.",
+      "cannotBeNull": "Nome do serviço não pode ser vazio."
+    },
+    "success": {
+      "onSave": "Serviço cadastrado.",
+      "onUpdate": "Serviço atualizado.",
+      "onDelete": "Serviço removido.",
+      "onDeactivate": "Serviço desativado.",
+      "onActivate": "Serviço ativado."
+    }
+  }
+}

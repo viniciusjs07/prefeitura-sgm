@@ -1,0 +1,14 @@
+.categories-container {
+  width: 100%;
+}
+
+.vertical-section {
+  border: 1px solid #dedede;
+  min-height: 30vw;
+  padding: 2px;
+  width: 60%;
+}
+
+.vertical-section:not(:last-of-type) {
+  border-right: none;
+}

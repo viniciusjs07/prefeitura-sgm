@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "title": "Configurações",
+    "btn": {
+      "createprofile": "Perfil"
+    },
+    "navs": {
+      "profiles": "Perfis",
+      "authorities": "Permissões",
+      "languages": "Idiomas",
+      "link": "Link Externo"
+    },
+    "form": {
+      "firstname": "Nome",
+      "firstname.placeholder": "Seu nome",
+      "lastname": "Sobrenome",
+      "lastname.placeholder": "Seu sobrenome",
+      "language": "Idioma",
+      "button": "Salvar"
+    },
+    "profile": {
+      "searchPlaceholder": "Buscar Perfil"
+    },
+    "messages": {
+      "error": {
+        "fail": "<strong>Ocorreu um erro!</strong> As configurações não foram salvas.",
+        "emailexists": "<strong>E-mail já cadastrado!</strong> Favor escolher outro."
+      },
+      "success": "<strong>Configurações salvas com sucesso!</strong>",
+      "validate": {
+        "firstname": {
+          "required": "O nome é obrigatório.",
+          "minlength": "O nome deve ter pelo menos 1 caractere",
+          "maxlength": "O nome não pode ter mais de 50 caracteres"
+        },
+        "lastname": {
+          "required": "O sobrenome é obrigatório.",
+          "minlength": "O sobrenome deve ter pelo menos 1 caractere",
+          "maxlength": "O sobrenome não pode ter mais de 50 caracteres"
+        }
+      }
+    }
+  }
+}

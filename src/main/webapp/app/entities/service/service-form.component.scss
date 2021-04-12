@@ -1,0 +1,133 @@
+.container-form {
+  label {
+    font-size: 12px;
+    color: #384364;
+    opacity: 0.6;
+    font-weight: bold;
+  }
+}
+
+$images-width: 445px;
+$margin-offset: 15px;
+
+.images-column {
+  max-width: $images-width;
+  margin-right: $margin-offset;
+}
+
+.form-column {
+  width: calc(100% - #{$images-width} - #{$margin-offset});
+}
+
+@media (max-width: 1200px) {
+  .images-column {
+    margin-right: 0;
+  }
+
+  .form-column {
+    width: calc(100% - #{$images-width});
+  }
+}
+
+.tags-input-valid {
+  border-left: 5px solid green;
+}
+
+.compatible-style {
+  color: #384364;
+  font-size: 12px;
+  opacity: 0.4;
+  font-weight: bold;
+}
+
+.side-line {
+  height: 1px;
+  background-color: lightgray;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.title {
+  font-weight: bold;
+  color: gray;
+  font-size: 16px;
+}
+
+.mg-b {
+  margin-bottom: 30px;
+}
+
+.categories-container {
+  height: 30vh;
+  min-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  > * {
+    width: 31%;
+  }
+}
+
+.qrcode {
+  margin: -7px auto 0 15px;
+}
+
+.tags-input {
+  background-color: #F5F4FC;
+  display: inline-block;
+  padding: 3px 0 ;
+}
+
+.tags-input .tag {
+  background-color: rgb(11, 180, 212);
+  border-radius: 8px;
+  margin: 0.25em 0.1em;
+  display: inline-block;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  color: white;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.disable-tag {
+  background-color: lightgray !important;
+  cursor: default !important;
+}
+
+
+.tags-disable {
+  border-left: 5px solid lightgray;
+}
+
+
+.text-tag {
+  display: inline-block;
+  padding-top: 2px;
+}
+
+.tags-input .main-input {
+  border: 0;
+  outline: 0;
+  padding: 0.5em 0.1em;
+  background-color: transparent;
+}
+
+.tags-input .disable-tag .close:hover::after {
+  color: #000 !important;
+  opacity: 0.75 !important;
+}
+
+.tags-input .tag .close::after {
+  content: "✖";
+  font-weight: bold;
+  display: inline-block;
+  transform: scale(0.5);
+  margin-left: 0.25em;
+}
+
+.tags-input .tag .close:hover::after {
+  color: #dc3545;
+}
+
